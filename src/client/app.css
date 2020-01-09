@@ -1,0 +1,171 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Courgette&display=swap");
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #0b1a36;
+  color: aliceblue;
+  font-family: "Pacifico";
+  font-size: 50px;
+}
+.left h5 {
+  font-size: 50px;
+  margin-top: 40%;
+  font-family: "Courgette", cursive;
+  text-align: center;
+}
+.leftsign {
+  left: 0;
+  background: url("https://images.pexels.com/photos/546357/pexels-photo-546357.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: 50vw 100vh;
+}
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: #0b1a36;
+}
+.loginright {
+  right: 0;
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/3512846/pexels-photo-3512846.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: 50vw;
+}
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+.centered h2 {
+  color: white;
+  font-weight: bold;
+}
+.loginput {
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+.btn-sign {
+  background: rgb(253, 253, 253);
+  width: 100px;
+  font-weight: bolder;
+  padding: 8px;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-top: 5px;
+}
+.btn-register {
+  background: rgb(253, 253, 253);
+  width: 100px;
+  font-weight: bolder;
+  padding: 8px;
+  margin-top: -30px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.snup {
+  color: white !important;
+  padding: 20px;
+  margin-top: -10px;
+}
+.snup a {
+  color: white !important;
+}
+.bg-default {
+  background: #0b1a36;
+}
+.signup {
+  width: 90%;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 10px !important;
+}
+.signlabel {
+  margin-top: 10px;
+}
+.loginwith {
+  width: 200px;
+  height: 40px;
+  border: 1px solid;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 5px;
+  margin-left: 25%;
+  margin-top: -25px;
+}
+.loginwith img {
+  width: 30px;
+  height: 20px;
+  margin-left: 0px;
+  padding-right: 5px;
+}
+.carousel-item {
+  height: 60vh;
+}
+.btn-carousel {
+  background: white;
+}
+.abouthead {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://images.pexels.com/photos/587836/pexels-photo-587836.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  height: 60vh;
+}
+.abouthead h2 {
+  color: white;
+  padding-top: 10%;
+}
+.card-product .img-wrap {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+  position: relative;
+  height: 220px;
+  text-align: center;
+}
+.card-product .img-wrap img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+.card-product .info-wrap {
+  overflow: hidden;
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+.card-product .bottom-wrap {
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+.label-rating { margin-right:10px;
+  color: #333;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card-product .price-old {
+  color: #999;
+}
+.info-wrap h4{
+
+}
+.info-wrap p{
+  
+}
