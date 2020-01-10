@@ -1,6 +1,8 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One|Archivo+Black|Candal|Courgette|Damion|Francois+One|Fredoka+One|Josefin+Sans|Source+Sans+Pro|Ultra&display=swap|Fredoka+One&display=swap|Kalam&display=|");
+body{
+  background: rgb(227, 227, 228);
+}
 .split {
   height: 100%;
   width: 50%;
@@ -35,12 +37,14 @@
   right: 0;
   background-color: #0b1a36;
 }
+
 .loginright {
   right: 0;
   background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
     url("https://images.pexels.com/photos/3512846/pexels-photo-3512846.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
   background-size: 50vw;
 }
+
 /* If you want the content centered horizontally and vertically */
 .centered {
   position: absolute;
@@ -100,6 +104,7 @@
 }
 .signlabel {
   margin-top: 10px;
+  font-family: "Candal", sans-serif;
 }
 .loginwith {
   width: 200px;
@@ -119,13 +124,16 @@
 }
 .carousel-item {
   height: 60vh;
+  font-size: 30px;
+  font-family: "Ultra", serif;
+  opacity: 0.9;
 }
 .btn-carousel {
   background: white;
 }
 .abouthead {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("https://images.pexels.com/photos/587836/pexels-photo-587836.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    url("https://images.pexels.com/photos/450441/pexels-photo-450441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   height: 60vh;
 }
 .abouthead h2 {
@@ -154,7 +162,8 @@
   border-top: 1px solid #eee;
 }
 
-.label-rating { margin-right:10px;
+.label-rating {
+  margin-right: 10px;
   color: #333;
   display: inline-block;
   vertical-align: middle;
@@ -163,9 +172,98 @@
 .card-product .price-old {
   color: #999;
 }
-.info-wrap h4{
+.info-wrap h4 {
+  font-family: "Francois One", sans-serif;
+}
+.info-wrap p {
+  font-family: "Courgette", cursive;
+}
+.abouthead h2 {
+  font-family: "Archivo Black", sans-serif;
+  text-decoration: underline;
+}
+.abouthead h3 {
+  font-family: "Josefin Sans", sans-serif;
+  color: white !important;
+}
+.abouthead h4 {
+  font-family: "Fredoka One", cursive;
+  margin-top: 10px;
+  color: #7d89a1;
+}
+.navbar-brand h2 {
+  font-family: "Alfa Slab One", cursive;
+}
+a.nav-link {
+  font-family: "Damion", cursive;
+  font-size: 30px;
+}
+.loginright h2 {
+  font-family: "Candal", sans-serif;
+}
+.feed-image img {
+  width: 100%;
+}
+.rounded-circle {
+  border-radius: 0px !important;
+}
+.addpost {
+  margin-top: 2%;
+  margin-left: 91% !important;
+}
+.post-item {
+  margin-top: 3%;
+}
+.new-post {
+  background: #0b1a36 !important;
+  color: white;
+  margin-top: 2%;
+}
+.post-bg {
+  background: #0b1a36 !important;
+  color: white;
+}
+.feed-image {
+  margin-bottom: 2%;
+}
+
+.how-section1{
+  margin-top:-15%;
+  padding: 10%;
+}
+.how-section1 h4{
+  color: #0c0c0c;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Fredoka One', cursive;
+}
+.how-section1 .subheading{
+  color: #0c0c0c;
+  font-size: 20px;
+  font-family: 'Kalam', cursive;
+}
+.text-muted p{
 
 }
-.info-wrap p{
-  
+.how-section1 .row
+{
+  margin-top: 10%;
+}
+.how-img 
+{
+  text-align: center;
+}
+.how-img img{
+  width: 40%;
+}
+.carousel-item h3{
+  text-decoration: underline;
+  color: #000000;
+  font-family: 'Fredoka One', cursive; 
+  font-size: 40px;
+}
+.carousel-item p{
+  color: #000000;
+
+;
 }

@@ -6,6 +6,7 @@ import Signup from "./components/signup/signup";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Navbar from "./components/Navbar/Navbar";
+import Feed from"./components/Feed/Feed"
 
 const App = () => (
   <Router>
@@ -15,6 +16,7 @@ const App = () => (
       <Route path="/login" component={Login} />
       <Route path="/signup" component={Signup} />
       <Route path="/about" component={About} />
+      <Route path ="/feed" component ={Feed}/> 
     </Switch>
   </Router>
 );

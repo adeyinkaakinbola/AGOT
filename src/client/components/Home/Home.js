@@ -4,38 +4,95 @@ import { UncontrolledCarousel } from "reactstrap";
 const items = [
   {
     src:
-      "https://images.pexels.com/photos/1237008/pexels-photo-1237008.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.pexels.com/photos/3060338/pexels-photo-3060338.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     altText: "Slide 1",
     caption:
-      "The sun in AGOT symbolises light and a helping hand,in science the moon borrows light from the sun.",
-    header: <button className="btn btn-carousel">I AM A SUN</button>,
+      "When you’re comfortable and content with who you are, the voices of others who try and define, control or direct you are not important.",
+    header: "Rachel Robins",
     key: "1"
   },
   {
     src:
-      "https://images.pexels.com/photos/399973/pexels-photo-399973.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.pexels.com/photos/2057182/pexels-photo-2057182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     altText: "Slide 2",
     caption:
-      "  The moon in AGOT symbolises a time when you are down and out and need someone to help you carry on.",
-    header: <button className="btn btn-carousel">I AM A MOON</button>,
+      "  If we are always pushing away from feelings that we condemn as wrong, painful, or ugly, we are also pushing away from the very energy that can bring us incredible joy and ecstasy.",
+    header: "Shaeri Richards",
     key: "2"
-  }
+  },
 
-  // ,
-  // {
-  //   src:
-  //     "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa21%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa21%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22218.3%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E",
-  //   altText: "Slide 3",
-  //   caption: "Slide 3",
-  //   header: "Slide 3 Header",
-  //   key: "3"
-  // }
+  {
+    src:
+      "https://images.pexels.com/photos/1191490/pexels-photo-1191490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    altText: "Slide 3",
+    caption: "There is hope, even when your brain tells you there isn’t.",
+    header: "John Green",
+    key: "3"
+  },
+
+  {
+    src:
+      "https://images.pexels.com/photos/1391450/pexels-photo-1391450.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    altText: "Slide 4",
+    caption:
+      "And if today all you did was hold yourself together, I’m proud of you.",
+    header: "Healthy place.com",
+    key: "4"
+  },
+
+  {
+    src:
+      "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    altText: "Slide 5",
+    caption:
+      "Give yourself another day, another chance. You will find your courage eventually. Don’t give up on yourself just yet.",
+    header: "Healthy place.com",
+    key: "5"
+  }
 ];
 
 const Home = () => {
   return (
     <div>
       <UncontrolledCarousel items={items} />
+      <div class="how-section1">
+        <div class="row">
+          <div class="col-md-6 how-img">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSWlWSvbun1Sz1wiYLUBEB1lk69q9QzBwQyKgjA15Kl594wr82b"
+              class="rounded-circle img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-md-6">
+            <h4>MOON</h4>
+            <h4 class="subheading">
+              What is a moon in AGOT?
+            </h4>
+            <p class="text-muted">
+             In AGOT a moon symbolises someone that need strength to carry on,it doesn't show your weakness rather it helps the counsellers identify you faster and easier.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h4>SUN</h4>
+            <h4 class="subheading">
+              What is the sun in AGOT?
+            </h4>
+            <p class="text-muted">
+         In AGOT the sun is a source of strength,users can look to the sun for motivational quotes and advice on how they went through their rough patch.Just like in science it says the moon borrows light from the sun.
+            </p>
+          </div>
+          <div class="col-md-6 how-img">
+            <img
+              src="https://www.newdelhitimes.com/wp-content/uploads/2019/11/5-1.png"
+              class="rounded-circle img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
