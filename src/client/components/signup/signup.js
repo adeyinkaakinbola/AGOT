@@ -1,12 +1,24 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
+import axios from "axios";
+
 const Signup = () => {
   const [signup, setsignup] = useState(null);
+  const [response, setResponse] = useState(null);
+
   const handleChange = e => {
     const { name, value } = e.target;
     setsignup({ ...signup, [name]: value });
   };
-  console.log(signup);
+
+  const handleSubmit = async () => {
+    const postData = await axios.post("/api/register", signup);
+    setResponse(postData.data);
+    if (typeof postData.data == "string") {
+      return <Redirect to="/feed" />;
+    }
+  };
+  console.log(response);
   return (
     <div>
       <div className="split right">
@@ -14,16 +26,23 @@ const Signup = () => {
           <h2 className="signlabel">SIGNUP</h2>
           <input
             className="signup"
-            name="First Name"
+            name="FirstName"
             type="Text"
             placeholder="First Name"
             onChange={handleChange}
           />
           <input
             className="signup"
-            name="Surname "
+            name="Surname"
             type="Text"
             placeholder="Surname"
+            onChange={handleChange}
+          />
+          <input
+            className="signup"
+            name="UserName"
+            type="Text"
+            placeholder="Username"
             onChange={handleChange}
           />
 
@@ -36,8 +55,8 @@ const Signup = () => {
           />
           <input
             className="signup"
-            name="password"
-            type="Text"
+            name="Password"
+            type="password"
             placeholder="Password"
             onChange={handleChange}
           />
@@ -49,11 +68,15 @@ const Signup = () => {
           </p>
 
           <br />
-          <Link to="/">
-            <button className="btn btn-register" type="submit">
-              SIGN UP
-            </button>
-          </Link>
+          {/* <Link to="/"> */}
+          <button
+            onClick={handleSubmit}
+            className="btn btn-register"
+            type="submit"
+          >
+            SIGN UP
+          </button>
+          {/* </Link> */}
         </div>
       </div>
       <div className="split leftsign"></div>

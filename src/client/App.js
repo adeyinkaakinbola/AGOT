@@ -3,10 +3,11 @@ import "./app.css";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Login from "./components/Login/Login";
 import Signup from "./components/signup/signup";
-import Home from "./components/Home/Home";
+import Home from "./components/Feed/Home/Home";
 import About from "./components/About/About";
 import Navbar from "./components/Navbar/Navbar";
-import Feed from"./components/Feed/Feed"
+import Feed from"./components/Feed/Feed";
+import Profile from './components/Profile/Profile'
 
 const App = () => (
   <Router>
@@ -17,6 +18,7 @@ const App = () => (
       <Route path="/signup" component={Signup} />
       <Route path="/about" component={About} />
       <Route path ="/feed" component ={Feed}/> 
+      <Route path="/profile" component={Profile}/>
     </Switch>
   </Router>
 );

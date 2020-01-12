@@ -1,20 +1,33 @@
-const router = require('express').Router();
-const NewsAPI = require('newsapi');
+const router = require("express").Router();
+const User = require("../models/data");
+const bcrypt = require("bcrypt");
 
-router.get('/news', (req, res) => {
-  const newsapi = new NewsAPI('3276da7108d44a1bb889ba074027676f');
-  // To query /v2/top-headlines
-  // All options passed to topHeadlines are optional, but you need to include at least one of them
-  newsapi.v2
-    .everything({
-      // sources: 'bbc-news,the-verge',
-      q: ['business'],
-      // category: 'sports',
-      language: 'en'
-      // country: 'ng'
-    })
-    .then((response) => {
-      res.status(200).json(response);
+router.post("/register", (req, res) => {
+  const { FirstName, Surname, UserName, Email, Password } = req.body;
+  console.log(req.body);
+  if (!FirstName || !Surname || !UserName || !Email || !Password) {
+    res.send({ err: "Please fill all fields!" });
+  } else if (Password.length < 6) {
+    res.send("Password should be at lease 6 characters.");
+  } else {
+    const newUser = new User({
+      FirstName,
+      Surname,
+      UserName,
+      Email,
+      Password
     });
+    bcrypt.genSalt(10, (err, salt) => {
+      bcrypt.hash(Password, salt, (err, hash) => {
+        if (err) throw err;
+        newUser.Password = hash;
+        newUser
+          .save()
+          .then(user => res.send("Registration Successful!"))
+          .catch(err => console.log(err.stack));
+      });
+    });
+  }
 });
+
 module.exports = router;

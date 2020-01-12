@@ -1,13 +1,12 @@
 const mongoose = require('mongoose');
 
-const newsSchema = new mongoose.Schema({
-  title: { type: String },
-  author: { type: String },
-  content: { type: String },
-  description: { type: String },
-  url: { type: String },
-  image: { type: String },
-  date: { type: String }
+const userSchema = new mongoose.Schema({
+ FirstName:{type:String,  required:true},
+ Surname:{type:String, required:true},
+ UserName:{type:String,required:true},
+ Email:{type:String,required:true},
+ Password:{type:String,required:true}
+
 });
 
-module.exports = mongoose.model('News', newsSchema);
+module.exports = mongoose.model('User', userSchema);
