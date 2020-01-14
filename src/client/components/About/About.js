@@ -37,7 +37,7 @@ export default function About() {
                 <h4 class="title" align="center">
                   ARE
                 </h4>
-                <p class="desc">AGOT has dedicated peer counsellers that are always online,to talk to you.Pouring out your heart we will be able to assess you and provide the help you need.</p>
+                <p class="desc">AGOT has dedicated peer counsellers that are always online,to talk to you.Pouring out your heart we will be able to assess you and provide the help you need,the counsellers are online 24/7 and are always available to hear what you want to say.</p>
               </figcaption>
             </figure>
           </div>
@@ -50,7 +50,7 @@ export default function About() {
                 <h4 class="title" align="center">
                   AGOT
                 </h4>
-                <p class="desc">Some small description goes here</p>
+                <p class="desc">The privacy policy in AGOT ensures that both the patient and the doctor do not know each other this gives a barrier and also makes it safe to tell the most intimate things about your life without anybody actually knowing you. </p>
               </figcaption>
             </figure>
           </div>

@@ -50,33 +50,16 @@ export default function Posts() {
                         </div>
                         <div className="news-content">
                           <p>
-                            Sportsman do offending supported extremity breakfast
-                            by listening. Decisively advantages nor expression
-                            unpleasing she led met. Estate was tended ten boy
-                            nearer seemed. As so seeing latter he should thirty
-                            whence. Steepest speaking up attended it as. Made
-                            neat an on be gave show snug tore.
+                           Today i sat in class numb as ever feeling like my heart was about to explode.My teacher spoke and said all that he had to say on a topic that all 20 of us couldn't understand.But why did i feel so alone?Sitting in a class full of people but still feeling alone.
+                           "Don't let anybody mess with your mood."Almost everybody says.But how do i do that,when i myself have the ability to blame myself for things i can not control.
+
                           </p>
                           <p>
-                            Did shy say mention enabled through elderly improve.
-                            As at so believe account evening behaved hearted is.
-                            House is tiled we aware. It ye greatest removing
-                            concerns an overcame appetite. Manner result square
-                            father boy behind its his. Their above spoke match
-                            ye mr right oh as first. Be my depending to
-                            believing perfectly concealed household. Point could
-                            to built no hours smile sense.
+                          Everybody knows i am fine afterall i am "STRONG" nothing can affect me,nothing can bring me down.My teacher who will go on with the lesson whether i am with him or not.Ofcourse he can't realise/see i am crying both on the inside and outside.
                           </p>
                           <p>
-                            Your it to gave life whom as. Favourable dissimilar
-                            resolution led for and had. At play much to time
-                            four many. Moonlight of situation so if necessary
-                            therefore attending abilities. Calling looking
-                            enquire up me to in removal. Park fat she nor does
-                            play deal our. Procured sex material his offering
-                            humanity laughing moderate can. Unreserved had she
-                            nay dissimilar admiration interested. Departure
-                            performed exquisite rapturous so ye me resources.
+                        I am breaking and falling apart but nobody can hear a sound .Seems like everybody thinks they know me but nobody actually does,but somehow when i bring suicide in everyone jumps in and say they understand and ill be fine.You can't understand death unless you are dead.I read a quote that said i wasn't myself for ages but nobody noticed and that hit home.
+              
                           </p>
                         </div>
                         <hr />

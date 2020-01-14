@@ -11,7 +11,7 @@ export default function Profile() {
             <div class="media align-items-end profile-header">
               <span class="profile mr-3">
                 <img
-                  src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT2f9J3yJW7uoRFEg077VpzEz_tQ54PmID7kNwLg0T7CGSQXQfU"
                   alt="..."
                   width="130"
                   class="rounded mb-2 img-thumbnail"
@@ -24,7 +24,7 @@ export default function Profile() {
                   <p class="small mb-4">Date of birth:6/5/1999</p>
                   <br/>
                   <br/>
-                  <p>"bio"</p>
+                  <p>"I did not choose the sad life ,it chose me"</p>
                   <a href="#" class="btn btn-dark btn-sm">
                     Edit profile
                   </a>
