@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-export default function Posts() {
-    return (
-        <div>
-             <div className="col-md-9 post-item">
+export default function Posts({ feeds }) {
+
+  console.log(feeds && feeds);
+  return (
+    <div>
+      {feeds
+        && feeds.map((item, i) => (
+          <div className="col-md-9 post-item" key={i}>
             <div className="row mb-2">
               <div className="col-md-12">
                 <div className="card post-bg">
@@ -19,8 +23,8 @@ export default function Posts() {
                                   alt="Author image"
                                   className="rounded-circle"
                                   style={{
-                                    width: "90px",
-                                    border: "1px solid #000000"
+                                    width: '90px',
+                                    border: '1px solid #000000'
                                   }}
                                 />
                               </a>
@@ -37,7 +41,7 @@ export default function Posts() {
                         <div className="news-cats">
                           <ul className="list-unstyled list-inline mb-1">
                             <li className="list-inline-item">
-                              <i className="fa fa-folder-o text-danger"></i>
+                              <i className="fa fa-folder-o text-danger" />
                               <a href="#">
                                 <small>4th July 2018</small>
                               </a>
@@ -45,22 +49,11 @@ export default function Posts() {
                           </ul>
                         </div>
                         <hr />
-                        <div className="feed-image">
-                          <img src="https://images.pexels.com/photos/362948/pexels-photo-362948.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                        <div className="feed-image" align="center">
+                          <img src={item.photo} />
                         </div>
                         <div className="news-content">
-                          <p>
-                           Today i sat in class numb as ever feeling like my heart was about to explode.My teacher spoke and said all that he had to say on a topic that all 20 of us couldn't understand.But why did i feel so alone?Sitting in a class full of people but still feeling alone.
-                           "Don't let anybody mess with your mood."Almost everybody says.But how do i do that,when i myself have the ability to blame myself for things i can not control.
-
-                          </p>
-                          <p>
-                          Everybody knows i am fine afterall i am "STRONG" nothing can affect me,nothing can bring me down.My teacher who will go on with the lesson whether i am with him or not.Ofcourse he can't realise/see i am crying both on the inside and outside.
-                          </p>
-                          <p>
-                        I am breaking and falling apart but nobody can hear a sound .Seems like everybody thinks they know me but nobody actually does,but somehow when i bring suicide in everyone jumps in and say they understand and ill be fine.You can't understand death unless you are dead.I read a quote that said i wasn't myself for ages but nobody noticed and that hit home.
-              
-                          </p>
+                          <p>{item.text}</p>
                         </div>
                         <hr />
                         <div className="news-footer">
@@ -69,14 +62,14 @@ export default function Posts() {
                               type="button"
                               className="btn btn-outline-secondary"
                             >
-                              <i className="fas fa-thumbs-up text-light"></i>{" "}
+                              <i className="fas fa-thumbs-up text-light" />
                               <span className="badge ">Likes 4</span>
                             </button>
                             <button
                               type="button"
                               className="btn btn-outline-secondary"
                             >
-                              <i className="fas fa-thumbs-down text-light"></i>
+                              <i className="fas fa-thumbs-down text-light" />
                               <span className="badge">Disklikes 4</span>
                             </button>
                           </div>
@@ -89,6 +82,7 @@ export default function Posts() {
               </div>
             </div>
           </div>
-        </div>
-    )
+        ))}
+    </div>
+  );
 }
