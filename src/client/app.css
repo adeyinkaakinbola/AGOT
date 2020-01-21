@@ -1,6 +1,6 @@
-@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
-@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One|Archivo+Black|Candal|Courgette|Damion|Francois+One|Fredoka+One|Josefin+Sans|Source+Sans+Pro|Ultra&display=swap|Fredoka+One&display=swap|Kalam&display=|Seymour+One&display=swap");
-body{
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Archivo+Black|Candal|Courgette|Damion|Francois+One|Fredoka+One|Josefin+Sans|Source+Sans+Pro|Ultra&display=swap|Fredoka+One&display=swap|Kalam&display=|Seymour+One&display=swap');
+body {
   background: rgb(227, 227, 228);
 }
 .split {
@@ -18,18 +18,18 @@ body{
   left: 0;
   background-color: #0b1a36;
   color: aliceblue;
-  font-family: "Pacifico";
+  font-family: 'Pacifico';
   font-size: 50px;
 }
 .left h5 {
   font-size: 50px;
   margin-top: 40%;
-  font-family: "Courgette", cursive;
+  font-family: 'Courgette', cursive;
   text-align: center;
 }
 .leftsign {
   left: 0;
-  background: url("https://images.pexels.com/photos/546357/pexels-photo-546357.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background: url('https://images.pexels.com/photos/546357/pexels-photo-546357.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-size: 50vw 100vh;
 }
 /* Control the right side */
@@ -41,7 +41,7 @@ body{
 .loginright {
   right: 0;
   background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
-    url("https://images.pexels.com/photos/3512846/pexels-photo-3512846.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    url('https://images.pexels.com/photos/3512846/pexels-photo-3512846.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
   background-size: 50vw;
 }
 
@@ -60,7 +60,7 @@ body{
   border-radius: 50%;
 }
 .centered h2 {
-  color: white;
+  color: white !important;
   font-weight: bold;
 }
 .loginput {
@@ -74,7 +74,7 @@ body{
   width: 100px;
   font-weight: bolder;
   padding: 8px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   margin-top: 5px;
 }
 .btn-register {
@@ -83,7 +83,7 @@ body{
   font-weight: bolder;
   padding: 8px;
   margin-top: -30px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 .snup {
   color: white !important;
@@ -104,7 +104,7 @@ body{
 }
 .signlabel {
   margin-top: 10px;
-  font-family: "Candal", sans-serif;
+  font-family: 'Candal', sans-serif;
 }
 .loginwith {
   width: 200px;
@@ -125,7 +125,7 @@ body{
 .carousel-item {
   height: 60vh;
   font-size: 30px;
-  font-family: "Ultra", serif;
+  font-family: 'Ultra', serif;
   opacity: 0.9;
 }
 .btn-carousel {
@@ -133,7 +133,7 @@ body{
 }
 .abouthead {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("https://images.pexels.com/photos/450441/pexels-photo-450441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    url('https://images.pexels.com/photos/450441/pexels-photo-450441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   height: 60vh;
 }
 .abouthead h2 {
@@ -173,51 +173,56 @@ body{
   color: #999;
 }
 .info-wrap h4 {
-  font-family: "Francois One", sans-serif;
+  font-family: 'Francois One', sans-serif;
 }
 .info-wrap p {
-  font-family: "Courgette", cursive;
+  font-family: 'Courgette', cursive;
 }
 .abouthead h2 {
-  font-family: "Archivo Black", sans-serif;
+  font-family: 'Archivo Black', sans-serif;
   text-decoration: underline;
 }
 .abouthead h3 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   color: white !important;
 }
 .abouthead h4 {
-  font-family: "Fredoka One", cursive;
+  font-family: 'Fredoka One', cursive;
   margin-top: 10px;
   color: #7d89a1;
 }
 .navbar-brand h2 {
-  font-family: "Alfa Slab One", cursive;
+  font-family: 'Alfa Slab One', cursive;
+  color: white;
 }
 a.nav-link {
-  font-family: "Damion", cursive;
+  font-family: 'Damion', cursive;
   font-size: 30px;
 }
 .loginright h2 {
-  font-family: "Candal", sans-serif;
+  font-family: 'Candal', sans-serif;
 }
 .feed-image img {
-  width: 100%;
+  width: 40%;
 }
 .rounded-circle {
   border-radius: 0px !important;
 }
 .addpost {
-  margin-top: 2%;
-  margin-left: 91% !important;
+  margin-top: 2rem;
+  margin-right: 1rem;
 }
 .post-item {
   margin-top: 3%;
+  width: 68vw
 }
 .new-post {
   background: #0b1a36 !important;
   color: white;
   margin-top: 2%;
+}
+.new-post h4 {
+  color: white;
 }
 .post-bg {
   background: #0b1a36 !important;
@@ -227,44 +232,49 @@ a.nav-link {
   margin-bottom: 2%;
 }
 
-.how-section1{
-  margin-top:-15%;
+.how-section1 {
+  margin-top: -15%;
   padding: 10%;
 }
-.how-section1 h4{
+.how-section1 h4 {
   color: #0c0c0c;
   font-weight: bold;
   font-size: 30px;
   font-family: 'Fredoka One', cursive;
 }
-.how-section1 .subheading{
+.how-section1 .subheading {
   color: #0c0c0c;
   font-size: 20px;
   font-family: 'Kalam', cursive;
 }
-.text-muted p{
-
+.text-muted p {
 }
-.how-section1 .row
-{
+.how-section1 .row {
   margin-top: 10%;
 }
-.how-img 
-{
+.how-img {
   text-align: center;
 }
-.how-img img{
+.how-img img {
   width: 40%;
 }
-.carousel-item h3{
+.carousel-item h3 {
   text-decoration: underline;
   color: #000000;
-  font-family: 'Fredoka One', cursive; 
+  font-family: 'Fredoka One', cursive;
   font-size: 40px;
 }
-.carousel-item p{
+.carousel-item p {
   color: #000000;
 }
-.chatSection{
+.chatSection {
   margin-left: 70%;
+}
+.mood-top {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+.feed-foot {
+  display: grid;
+  grid-template-columns: 17fr 1fr;
 }

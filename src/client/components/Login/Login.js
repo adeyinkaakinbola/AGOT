@@ -49,7 +49,9 @@ const Login = () => {
         </div>
       </div>
       <div className="split left">
-        <h5>"It's not the load that breaks you down,it's the way you carry it."</h5>
+        <h5>
+          "It's not the load that breaks you down,it's the way you carry it."
+        </h5>
       </div>
     </div>
   );
