@@ -21,8 +21,7 @@ export default function chat() {
                     <div className="row msg_container base_sent">
                         <div className="col-md-10 col-xs-10">
                             <div className="messages msg_sent">
-                                <p>that mongodb thing looks good, huh?
-                                tiny master db, and huge document store</p>
+                                <p>hi </p>
                                 <time dateTime="2009-11-13T20:00">Timothy • 51 min</time>
                             </div>
                         </div>

@@ -10,13 +10,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 mongoose
   .connect(process.env.MONGO_URI, {
+    // change this (SAMSON)
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
   .then(() => console.log("DB connected sucessfully"))
   .catch(err => console.log(err));
-
+``
 app.use(express.static("dist"));
 app.use(express.static("public"));
 
