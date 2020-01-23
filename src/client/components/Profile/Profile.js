@@ -1,8 +1,19 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import "./Profile.css";
 import Posts from "../Feed/Posts";
+import axios from "axios"
 
 export default function Profile() {
+  const [feeds, setfeeds] = useState();
+
+  useEffect(() => {
+    axios
+      .post('/api/getfeed')
+      .then((res) => {
+        setfeeds(res.data);
+      })
+      .catch(err => console.log(err));
+  }, []);
   return (
     <div class="row px-4">
       <div class="col">
@@ -22,8 +33,7 @@ export default function Profile() {
                   <h4 class="mt-0 mb-0">Lonely Apple</h4>
                   <h5 class="mt-0 mb-0">Sad person</h5>
                   <p class="small mb-4">Date of birth:6/5/1999</p>
-                  <br/>
-                  <br/>
+                
                   <p>"I did not choose the sad life ,it chose me"</p>
                   <a href="#" class="btn btn-dark btn-sm">
                     Edit profile
@@ -39,7 +49,7 @@ export default function Profile() {
                 <h5 class="font-weight-bold mb-0 d-block">1</h5>
                 <small class="text-muted">
                   {" "}
-                  <i class="fa fa-picture-o mr-1"></i>Posts
+                  <i class="fa fa-picture-o mr-1"></i>Post
                 </small>
               </li>
             </ul>
@@ -50,7 +60,7 @@ export default function Profile() {
               <h5 class="mb-0">Recent posts</h5>
             </div>
             <div style={{ width: "90vw !important" }} align="center">
-              <Posts />
+              <Posts feeds={feeds}/>
             </div>
           </div>
         </div>

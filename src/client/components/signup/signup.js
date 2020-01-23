@@ -25,6 +25,8 @@ const Signup = () => {
         <div className="centered ">
           <h2 className="signlabel">SIGNUP</h2>
           <input
+
+          
             className="signup"
             name="FirstName"
             type="Text"

@@ -54,12 +54,12 @@ const items = [
 const Home = () => {
   return (
     <div>
-      <UncontrolledCarousel items={items} />
+      <UncontrolledCarousel items={items}/>
       <div class="how-section1">
         <div class="row">
           <div class="col-md-6 how-img">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSWlWSvbun1Sz1wiYLUBEB1lk69q9QzBwQyKgjA15Kl594wr82b"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSUhAWnyZSDpa-vRwYZFY4gL1N0DueHm_NxUZjdMXgRtXZuc3nR"
               class="rounded-circle img-fluid"
               alt=""
             />

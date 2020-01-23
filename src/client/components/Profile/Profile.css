@@ -50,3 +50,19 @@
 .img-thumbnail{
     max-width: 40% !important;
 }
+.bg-dark{
+  background:  #0b1a36 !important;
+  border-top: #fff solid 3px;
+}
+.text-white h4{
+  color: #fff !important;
+  padding:5px ;
+}
+.text-white h5{
+  color: #fff !important;
+  padding:5px ;
+}
+.text-white p{
+  color: #fff !important;
+  padding:5px ;
+}

@@ -63,14 +63,14 @@ export default function Posts({ feeds }) {
                               className="btn btn-outline-secondary"
                             >
                               <i className="fas fa-thumbs-up text-light" />
-                              <span className="badge ">Likes 4</span>
+                              <span className="badge ">Likes 10</span>
                             </button>
                             <button
                               type="button"
                               className="btn btn-outline-secondary"
                             >
                               <i className="fas fa-thumbs-down text-light" />
-                              <span className="badge">Disklikes 4</span>
+                              <span className="badge">Disklikes 2</span>
                             </button>
                           </div>
                         </div>

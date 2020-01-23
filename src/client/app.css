@@ -1,5 +1,6 @@
 @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Archivo+Black|Candal|Courgette|Damion|Francois+One|Fredoka+One|Josefin+Sans|Source+Sans+Pro|Ultra&display=swap|Fredoka+One&display=swap|Kalam&display=|Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
 body {
   background: rgb(227, 227, 228);
 }
@@ -26,6 +27,7 @@ body {
   margin-top: 40%;
   font-family: 'Courgette', cursive;
   text-align: center;
+  color: white;
 }
 .leftsign {
   left: 0;
@@ -174,9 +176,12 @@ body {
 }
 .info-wrap h4 {
   font-family: 'Francois One', sans-serif;
+  font-size: 40px;
 }
 .info-wrap p {
-  font-family: 'Courgette', cursive;
+  font-family: 'Alata', sans-serif;
+  font-size: 25px;
+  color: #0c0c0c;
 }
 .abouthead h2 {
   font-family: 'Archivo Black', sans-serif;
@@ -260,12 +265,12 @@ a.nav-link {
 }
 .carousel-item h3 {
   text-decoration: underline;
-  color: #000000;
+  color:rgb(5, 5, 5);
   font-family: 'Fredoka One', cursive;
   font-size: 40px;
 }
 .carousel-item p {
-  color: #000000;
+  color:rgb(5, 5, 5);
 }
 .chatSection {
   margin-left: 70%;
